@@ -12,7 +12,7 @@ Helper for updating the environment variables of a lambda.
 Reads the configuration from the provided package.json, and updates the
 lambdas `description` and `version` environment variable. 
 
-Usage (with [npx](https://www.npmjs.com/package/npx):
+Usage (with [npx](https://www.npmjs.com/package/npx)):
 
     npx @nRFCloud/update-lambda-environment <functionName> </path/to/package.json>
 
