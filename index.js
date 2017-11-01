@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 
 const aws = require('aws-sdk')
 const t = require('tcomb')
