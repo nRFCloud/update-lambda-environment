@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
+/* global process */
+
 const aws = require('aws-sdk')
 const t = require('tcomb')
 const fs = require('fs')
 const semverRegex = require('semver-regex')
 const {blue, green, yellow} = require('colors')
 
-const lambda = new aws.Lambda()
+const lambda = new aws.Lambda({region: process.env.AWS_DEFAULT_REGION})
 
 fs.readFile(process.argv[process.argv.length - 1], (err, data) => {
   if (err) {
