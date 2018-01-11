@@ -1,16 +1,17 @@
 language: node_js
 cache:
   directories:
-    - node_modules
+  - "$HOME/.npm"
 notifications:
   email: false
+before_install:
+  - npm -g i npmc
 install:
-  - npm install
-  - npm prune
+  - npmc ci
 script:
   - echo "No tests, yet"
 after_success:
-  - npm run semantic-release
+  - npmc run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
