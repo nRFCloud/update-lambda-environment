@@ -5,13 +5,13 @@ cache:
 notifications:
   email: false
 before_install:
-  - npm -g i npmc
+  - npm -g i npm@
 install:
-  - npmc ci
+  - npm install
 script:
-  - echo "No tests, yet"
+  - npm run lint
 after_success:
-  - npmc run semantic-release
+  - npm run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
