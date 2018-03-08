@@ -33,7 +33,7 @@
     "@commitlint/config-angular": "^6.1.2",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
-    "semantic-release": "^12.4.1",
+    "semantic-release": "^15.0.0",
     "standard": "^10.0.3"
   },
   "engines": {
